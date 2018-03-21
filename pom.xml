@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sysco.qa</groupId>
+    <artifactId>UITest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>qe.syscolab.repo.core</id>
+            <name>qe_core</name>
+            <url>http://qcenter.cake.net:8081/repository/qe.syscolab.repo.core/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>spy</id>
+            <name>Spy Repository</name>
+            <layout>default</layout>
+            <url>http://files.couchbase.com/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>leapset.snapshot.repository</id>
+            <name>Archiva Managed Leapset SNAPSHOT Repository</name>
+            <url>http://repo.leapset.com/archiva/repository/snapshot/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>leapset.repository</id>
+            <url>http://repo.leapset.com/archiva/repository/leapset.repository/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+
+    </repositories>
+    <build>
+<plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+            <source>1.7</source>
+            <target>1.7</target>
+        </configuration>
+    </plugin>
+</plugins>
+</build>
+
+
+
+<dependencies>
+
+    <dependency>
+        <groupId>com.syscolab.qe</groupId>
+        <artifactId>qe-core</artifactId>
+        <version>beta0.1.6</version>
+    </dependency>
+
+
+</dependencies>
+
+
+
+
+</project>
